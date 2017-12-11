@@ -16,7 +16,7 @@ def main():
     Example workflow of starting a sandbox, waiting for it to setup, then stopping it
     :return:
     """
-    api_example = SandboxRESTAPI('localhost', '8032')
+    api_example = SandboxRESTAPI('localhost', '82')
     api_example.login("admin", "admin", "Global")
     sandbox_id = api_example.start_sandbox('Simple blueprint', datetime.timedelta(hours=2), 'test_sandbox')
     sandox_details = api_example.wait_for_sandbox_setup(sandbox_id)
