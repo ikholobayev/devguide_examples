@@ -17,7 +17,7 @@ def main():
     """
     Example of using sandbox as a context
     """
-    connectivity_params = QualiConnectivityParams('localhost', '8032', 'admin', 'admin', 'Global')
+    connectivity_params = QualiConnectivityParams('localhost', '82', 'admin', 'admin', 'Global')
 
     with SandboxContext(connectivity_params, 'Simple blueprint', datetime.timedelta(hours=2)) as sandbox:
         run_some_tests_or_other_code(sandbox)
